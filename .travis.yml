@@ -1,0 +1,12 @@
+language: julia
+julia:
+  - 0.3
+  - 0.4
+  - 0.5
+  - nightly
+notifications:
+  email: false
+#script: # use the default script setting
+#  - julia -e 'Pkg.init(); run(`ln -s $(pwd()) $(Pkg.dir("RunTests"))`); Pkg.pin("RunTests"); Pkg.resolve()'
+#  - julia -e 'using RunTests; @assert isdefined(:RunTests); @assert typeof(RunTests) === Module'
+#  - julia ./test/runtests.jl
